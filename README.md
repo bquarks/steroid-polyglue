@@ -1,6 +1,6 @@
 # bq-polyglue
 
-An element providing a starting point for your own reusable Polymer elements.
+Polyglue is used to broadcast payloads to registered callbacks, a way of comunication between components. — Edit
 
 
 ## Dependencies
