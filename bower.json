@@ -1,19 +1,21 @@
 {
   "name": "steroid-polyglue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Jorge Serrano <jorge.serrano@bq.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "Dispatcher element",
   "keywords": [
     "web-component",
     "web-components",
     "polymer",
-    "seed"
+    "bquarks",
+    "dispatcher",
+    "bq"
   ],
   "main": "steroid-polyglue.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/bquarks/steroid-polyglue",
   "ignore": [
     "/.*",
     "/test/",
@@ -25,5 +27,9 @@
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "web-component-tester": "*"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/bquarks/steroid-polyglue.git"
   }
 }
