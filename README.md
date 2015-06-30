@@ -1,6 +1,6 @@
 # steroid-polyglue
 
-Polyglue is used to broadcast payloads to registered callbacks, a way of comunication between components. — Edit
+Polyglue is used to broadcast payloads to registered callbacks, a way of comunication between components. 
 
 
 ## Dependencies
