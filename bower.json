@@ -1,5 +1,5 @@
 {
-  "name": "bq-polyglue",
+  "name": "steroid-polyglue",
   "version": "1.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -11,7 +11,7 @@
     "polymer",
     "seed"
   ],
-  "main": "bq-polyglue.html",
+  "main": "steroid-polyglue.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [

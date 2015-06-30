@@ -4,7 +4,7 @@
 
     var Dispatcher = Polymer({
 
-        is: 'bq-polyglue',
+        is: 'steroid-polyglue',
         _prefix: 'ID_',
         created: function() {
             this._lastID = 1;

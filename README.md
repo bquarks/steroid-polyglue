@@ -1,4 +1,4 @@
-# bq-polyglue
+# steroid-polyglue
 
 Polyglue is used to broadcast payloads to registered callbacks, a way of comunication between components. — Edit
 
@@ -28,13 +28,13 @@ And you can run it via:
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/bq-polyglue/`, where `bq-polyglue` is the name of the directory containing it.
+`http://localhost:8080/components/steroid-polyglue/`, where `steroid-polyglue` is the name of the directory containing it.
 
 
 ## Testing Your Element
 
 Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/bq-polyglue/test/`
+you are using Polyserve: `http://localhost:8080/components/steroid-polyglue/test/`
 
 ### web-component-tester
 
