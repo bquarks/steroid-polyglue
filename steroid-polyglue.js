@@ -21,7 +21,7 @@
          * @param {function} callback
          * @return {string}
          */
-        register(callback) {
+        register: function(callback) {
             var id = this._prefix + this._lastID++;
             this._callbacks[id] = callback;
             return id;
@@ -31,7 +31,7 @@
          *
          * @param {string} id
          */
-        unregister(id) {
+        unregister: function(id) {
             delete this._callbacks[id];
         },
         /**
@@ -41,7 +41,7 @@
          *
          * @param {array<string>} ids
          */
-        waitFor(ids) {
+        waitFor: function(ids) {
 
             for (var ii = 0; ii < ids.length; ii++) {
                 var id = ids[ii];
@@ -58,7 +58,7 @@
          *
          * @param {object} payload
          */
-        dispatch(payload) {
+        dispatch: function(payload) {
 
             this._startDispatching(payload);
             try {
@@ -78,7 +78,7 @@
          *
          * @return {boolean}
          */
-        isDispatching() {
+        isDispatching: function() {
             return this._isDispatching;
         },
 
@@ -89,7 +89,7 @@
          * @param {string} id
          * @internal
          */
-        _invokeCallback(id) {
+        _invokeCallback: function(id) {
             this._isPending[id] = true;
             this._callbacks[id](this._pendingPayload);
             this._isHandled[id] = true;
@@ -101,7 +101,7 @@
          * @param {object} payload
          * @internal
          */
-        _startDispatching(payload) {
+        _startDispatching: function(payload) {
             for (var id in this._callbacks) {
                 this._isPending[id] = false;
                 this._isHandled[id] = false;
@@ -115,7 +115,7 @@
          *
          * @internal
          */
-        _stopDispatching() {
+        _stopDispatching: function() {
             this._pendingPayload = null;
             this._isDispatching = false;
         }
