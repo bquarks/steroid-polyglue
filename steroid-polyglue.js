@@ -21,10 +21,26 @@
          * @param {function} callback
          * @return {string}
          */
-        register: function(callback) {
-            var id = this._prefix + this._lastID++;
-            this._callbacks[id] = callback;
-            return id;
+        register: function(/*id,callback*/) {
+
+            var args = [];
+
+            for (var i = arguments.length - 1; i >= 0; i--) {
+                args.push(arguments[i]);
+            };
+
+            if(args.length > 1){
+
+                var id = args[1];
+                this._callbacks[id] = args[0];
+                return id;
+
+            }else{
+
+                var id = this._prefix + this._lastID++;
+                this._callbacks[id] = callback;
+                return id;
+            }
         },
         /**
          * Removes a callback based on its token.
