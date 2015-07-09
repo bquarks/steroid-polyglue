@@ -95,7 +95,7 @@
          * @param  {String} id     registered callback's name
          * @param  {Object} payload Payload object to send
          */
-        dispatchOne(id,name,target,from,data) {
+        dispatchOne: function(id,name,target,from,data) {
 
             var payload = {};
 
