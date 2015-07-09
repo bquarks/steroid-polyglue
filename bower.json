@@ -1,10 +1,10 @@
 {
   "name": "steroid-polyglue",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "authors": [
     "Jorge Serrano <jorge.serrano@bq.com>"
   ],
-  "description": "Dispatcher element",
+  "description": "Polymer Dispatcher element",
   "keywords": [
     "web-component",
     "web-components",

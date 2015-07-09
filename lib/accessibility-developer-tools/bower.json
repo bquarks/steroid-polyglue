@@ -25,14 +25,5 @@
     "tools",
     "Gruntfile.js",
     "package.json"
-  ],
-  "_release": "2.7.1",
-  "_resolution": {
-    "type": "version",
-    "tag": "v2.7.1",
-    "commit": "8e02e91b7933e2bf6c3ddf1693113a198241f015"
-  },
-  "_source": "git://github.com/GoogleChrome/accessibility-developer-tools.git",
-  "_target": "^2.7.0",
-  "_originalSource": "GoogleChrome/accessibility-developer-tools"
+  ]
 }

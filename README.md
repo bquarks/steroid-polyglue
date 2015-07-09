@@ -2,6 +2,55 @@
 
 Polyglue is used to broadcast payloads to registered callbacks, a way of comunication between components. 
 
+### API
+
+##### register(function callback): string
+
+Registers a callback to be invoked with every dispatched payload. Returns a token that can be used with `dispatchOne()` and `waitFor()`.
+
+##### unregister(string id): void
+
+Removes a callback based on its token.
+
+##### waitFor(array<string##### ids): void
+
+Waits for the callbacks specified to be invoked before continuing execution of the current callback. This method should only be used by a callback in response to a dispatched payload.
+
+##### dispatch(object payload): void
+
+Dispatches a payload to all registered callbacks.
+
+##### dispatchOne(string id, string name, string target, string from, object data) : void
+
+Dispatches a payload to specific registered callbacks.
+
+
+##### isDispatching(): boolean
+
+Is this Dispatcher currently dispatching.
+
+
+
+## Example
+
+```javascript
+
+    var Polyglue = document.querySelector('steroid-polyglue');
+
+    var id = Polyglue.register(function(payload){
+        console.log('hello!', payload);
+    });
+
+    // Dispatch a specific callback
+    Polyglue.dispatchOne(id,'name:event', 'target:foo','from:bar' ,{ foo : 'bar'});
+
+
+    // Dispatch to all registered callbacks
+    Polyglue.dispatch({foo : 'bar', name : 'John Doe'});
+
+```
+
+
 
 ## Dependencies
 
