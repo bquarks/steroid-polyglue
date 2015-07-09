@@ -38,7 +38,7 @@
             }else{
 
                 var id = this._prefix + this._lastID++;
-                this._callbacks[id] = callback;
+                this._callbacks[id] = args[0];
                 return id;
             }
         },
